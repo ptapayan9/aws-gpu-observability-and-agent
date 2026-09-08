@@ -1,0 +1,47 @@
+# Private working files and diagnostic artifacts
+/.local/
+/work/
+/artifacts/
+.env
+.env.*
+!.env.example
+.aws/
+.kube/
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Terraform: keep source and .terraform.lock.hcl in Git
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.tfplan
+*.tfplan.*
+tfplan
+plan.out
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Generated builds and local tooling
+.DS_Store
+build/
+cmake-build-*/
+CMakeUserPresets.json
+compile_commands.json
+.cache/
+*.log
+
+# misc.
+docs
+AGENTS.md
